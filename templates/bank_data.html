@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Data</title>
+</head>
+<body>
+    <center>
+        <h1>All India Bank name</h1>
+        <table border="3px">
+            <tr>
+                <th>ID no</th>
+                <th>Bank name</th>
+            </tr>
+        {% for b in BOD %}
+            <tr>
+                <td>{{b.pk}}</td>
+                <td>{{b.bank_name}}</td>
+            </tr>
+        {% endfor %}
+    
+        </table>
+    </center>
+</body>
+</html>
